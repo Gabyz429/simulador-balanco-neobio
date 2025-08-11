@@ -117,10 +117,12 @@ colD.metric("Δ Proteína (% as-fed)", f"{res['pb_af_pct'] - res_sem['pb_af_pct'
 
 # ---- Notes ----
 with st.expander("Assunções e notas"):
-    st.markdown(\"\"\"
-    - Balanço em base de sólidos; proteína é considerada conservativa (sem degradação térmica).
-    - Perdas de **sólidos** podem ser colocadas como % do total de DS alimentado ao secador.
-    - A redução de xarope é aplicada na **vazão as-fed** e, por padrão, assume a mesma % de sólidos do xarope.
-    - Ajuste conforme os dados reais de laboratório (PB em DS das correntes, sólidos, umidade final).
-    - Unidades: t/h para fluxos, % para frações mássicas.
-    \"\"\")
+    st.markdown(
+        """
+- Balanço em base de sólidos; proteína é considerada conservativa (sem degradação térmica).
+- Perdas de **sólidos** podem ser colocadas como % do total de DS alimentado ao secador.
+- A redução de xarope é aplicada na **vazão as-fed** e, por padrão, assume a mesma % de sólidos do xarope.
+- Ajuste conforme os dados reais de laboratório (PB em DS das correntes, sólidos, umidade final).
+- Unidades: t/h para fluxos, % para frações mássicas.
+        """
+    )
